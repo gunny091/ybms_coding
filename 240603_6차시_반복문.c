@@ -19,9 +19,9 @@ void googoodan(int first, int secondStart, int SecondEnd)
 int main()
 {
 #ifdef INPUT
-    int firstNum;
-    scanf("%d", &firstNum);
-    googoodan(firstNum, SECOND_START, SECOND_LIMIT);
+    int firstNum, secondNum;
+    scanf("%d %d", &firstNum, &secondNum);
+    googoodan(firstNum, SECOND_START, secondNum);
 #else
     for (int firstNum = 2; firstNum <= FIRST_LIMIT; firstNum++)
     {
