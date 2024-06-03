@@ -25,8 +25,8 @@ int main()
 #else
     for (int firstNum = 2; firstNum <= FIRST_LIMIT; firstNum++)
     {
-        googoodan(firstNum, SECOND_START, SECOND_LIMIT)
-            printf("\n");
+        googoodan(firstNum, SECOND_START, SECOND_LIMIT);
+        printf("\n");
     }
 #endif
     return 0;
