@@ -18,7 +18,7 @@
 //             printf("천 번째");
 //         default:
 //             printf("최대값");
-//     } 
+//     }
 //     return 0;
 // }
 
@@ -68,27 +68,30 @@
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int n1, n2, sel;
     char symbols[] = {'+', '-', '*', '/', '%'};
     puts("숫자 2개, 계산 종류 입력(1:+, 2:-, 3:*, 4:/, 5:%%)");
     scanf("%d %d %d", &n1, &n2, &sel);
-    switch (sel) {
-        case 1:
+    switch (sel)
+    {
+    case 1:
         printf("%d + %d = %d", n1, n2, n1 + n2);
         break;
-        case 2:
+    case 2:
         printf("%d - %d = %d", n1, n2, n1 - n2);
         break;
-        case 3:
+    case 3:
         printf("%d * %d = %d", n1, n2, n1 * n2);
         break;
-        case 4:
+    case 4:
         printf("%d / %d = %d", n1, n2, n1 / n2);
         break;
-        case 5:
+    case 5:
         printf("%d %% %d = %d", n1, n2, n1 % n2);
         break;
     }
+    printf("\n");
     return 0;
 }
