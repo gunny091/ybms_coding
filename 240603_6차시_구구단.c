@@ -10,9 +10,17 @@
 void googoodan(int first, int secondStart, int SecondEnd)
 {
     printf("%d단\n", first);
-    for (int secondNum = secondStart; secondNum <= SecondEnd; secondNum++)
+    // for (int secondNum = secondStart; secondNum <= SecondEnd; secondNum++)
+    // {
+    //     printf("%d X %d = %d\n", first, secondNum, secondNum * first);
+    // }
+
+    // 만약 while문으로 바꿔버린다면
+    int secondNum = secondStart;
+    while (secondNum <= SecondEnd)
     {
         printf("%d X %d = %d\n", first, secondNum, secondNum * first);
+        secondNum++;
     }
 }
 
